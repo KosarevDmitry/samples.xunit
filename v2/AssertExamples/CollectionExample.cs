@@ -71,7 +71,7 @@ namespace AssertExtensibility
         {
             List<T> leftList = new List<T>(x);
             List<T> rightList = new List<T>(y);
-            leftList.Sort();
+            leftList.Sort(); // если T c конструктором, то еще требуется Icomparable, поэтому можно применить OrderBy, пример прилагаю
             rightList.Sort();
 
             IEnumerator<T> enumeratorX = leftList.GetEnumerator();
